@@ -1,0 +1,161 @@
+.ecopots-garan-root {
+  margin: 12px 0 18px;
+  width: 100%;
+}
+
+.ecopots-garan-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: auto;
+  max-width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d8dee8;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  box-shadow: none;
+}
+
+.ecopots-garan-trigger:hover {
+  border-color: #0b2b63;
+}
+
+.ecopots-garan-trigger:focus-visible {
+  outline: 3px solid rgba(11, 43, 99, .25);
+  outline-offset: 2px;
+}
+
+.ecopots-garan-trigger img {
+  display: block;
+  width: 92px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.ecopots-garan-trigger-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ecopots-garan-trigger-text strong {
+  color: #0b2b63;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+.ecopots-garan-trigger-text small {
+  color: #5c667a;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.ecopots-garan-modal[hidden] {
+  display: none !important;
+}
+
+.ecopots-garan-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+}
+
+.ecopots-garan-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+}
+
+.ecopots-garan-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(920px, calc(100vw - 28px));
+  max-height: calc(100vh - 28px);
+  overflow: auto;
+  margin: 14px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .3);
+}
+
+.ecopots-garan-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: #fff;
+  color: #182033;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.ecopots-garan-close:hover {
+  background: #f2f4f7;
+}
+
+.ecopots-garan-full-label {
+  padding: 18px 8px 8px;
+  text-align: center;
+}
+
+.ecopots-garan-full-label img {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.ecopots-garan-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+body.ecopots-garan-modal-open {
+  overflow: hidden !important;
+}
+
+@media (max-width: 600px) {
+  .ecopots-garan-root {
+    margin: 10px 0 16px;
+  }
+
+  .ecopots-garan-trigger {
+    width: 100%;
+  }
+
+  .ecopots-garan-trigger img {
+    width: 82px;
+  }
+
+  .ecopots-garan-trigger-text strong {
+    font-size: 15px;
+  }
+
+  .ecopots-garan-dialog {
+    width: calc(100vw - 18px);
+    max-height: calc(100vh - 18px);
+    margin: 9px auto;
+    padding: 18px 10px 12px;
+    border-radius: 10px;
+  }
+
+  .ecopots-garan-full-label {
+    padding: 20px 2px 4px;
+  }
+}
